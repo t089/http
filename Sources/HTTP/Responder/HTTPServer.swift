@@ -59,7 +59,7 @@ public final class HTTPServer {
 
                 // configure the pipeline
                 return channel.pipeline.configureHTTPServerPipeline(
-                    withPipeliningAssistance: false,
+                    withPipeliningAssistance: true,
                     withServerUpgrade: upgrade,
                     withErrorHandling: false
                 ).then {
